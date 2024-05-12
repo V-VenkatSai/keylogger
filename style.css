@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  width: 100vw;
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 600;
+  border: 2px solid #73b7ff;
+  padding: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.buttons-container .start-button,
+.buttons-container .stop-button {
+  font-size: 22px;
+}
+
+.output {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.keyevent,
+.keyposition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 10px;
+  background: #e3e4e6;
+  width: 48%;
+  min-height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .keyevent,
+  .keyposition {
+    font-size: 14px;
+    min-height: 50px;
+    width: 100%;
+  }
+
+  .buttons-container .start-button,
+  .buttons-container .stop-button {
+    font-size: 20px;
+  }
+}
